@@ -144,6 +144,8 @@ resource "aws_instance" "pvtec2-vpc1" {
 }
 
 #################################
+# VPC 2 Definitions
+#################################
 
 # VPC 2
 resource "aws_vpc" "vpc2" {
