@@ -25,7 +25,7 @@ EOF
 # Attach a policy to the IAM role to access the source S3 bucket
 resource "aws_iam_role_policy_attachment" "source_account_role_policy_attachment" {
   role       = aws_iam_role.source_account_role.name
-  policy_arn = "arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess" # Adjust policy as needed
+  policy_arn = "arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess" 
 }
 
 # Create a bucket policy for the source S3 bucket to allow access from the IAM role in the destination account
